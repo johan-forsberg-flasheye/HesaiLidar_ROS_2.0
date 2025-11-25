@@ -74,3 +74,13 @@ Monday June 30rd, 2025 17:28:15
 3. Modify the config.yaml configuration table, configure different data sources through source_type, and fill in the corresponding configuration items
 4. send_imu_ros controls whether IMU data registers callback functions and whether to publish IMU data
 5. Support jazzy version, support install
+
+################################################################################
+Tuesday November 25th, 2025
+## version
+preliminary
+
+## modify
+1. Updated to support DoRemake and return point cloud organized in rows and columns
+2. Works with updated SDK module with dense organized point cloud for OT128
+3. Defaults to not use DoRemake. Set in config/config.yaml

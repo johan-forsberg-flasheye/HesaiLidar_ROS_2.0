@@ -26,9 +26,9 @@ lidar:
         caFile: ""                                    # Represents the path of the CA certificate 
 
       pcap_type:
-        pcap_path: "/home/jf/Work/Flasheye/Hesai/test/hesai_ws/ot128.pcap"
-        correction_file_path: "/home/jf/Work/Flasheye/Hesai/test/hesai_ws/OT128_Angle-Correction-File.csv"
-        firetimes_path: "/home/jf/Work/Flasheye/Hesai/test/hesai_ws/OT128_Firetime-Correction-File.csv"
+        pcap_path: "ot128.pcap"
+        correction_file_path: "OT128_Angle-Correction-File.csv"
+        firetimes_path: "OT128_Firetime-Correction-File.csv"
 
         pcap_play_synchronization: true                     # pcap play rate synchronize with the host time
         pcap_play_in_loop: true
@@ -66,7 +66,7 @@ lidar:
       device_fault_port: 0                  # Filter fault message for specified source ports in case of multiple lidar, setting >=1024
       # NEW: RemakeConfig parameters
       remake_config:
-        enabled: false                      # Enable RemakeConfig
+        enabled: true                      # Enable RemakeConfig
         use_ring_for_vertical: true         # OT128: ring-based vertical binning
         duplicate_sparse_rings: false       # OT128: fill sparse ring gaps
     ros:
